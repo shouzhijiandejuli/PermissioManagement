@@ -41,7 +41,7 @@ public class UserController extends BaseController {
 	@ControllerLog("查询用户列表")
 	@RequestMapping("queryPage")
 	@ResponseBody
-	@Authority(opCode = "0101", opName = "查询用户列表")
+	@Authority(opCode = "", opName = "查询用户列表")
 	public PageAjax<AuthUser> queryPage(PageAjax<AuthUser> page, AuthUser user) {
 		return userService.queryPage(page, user);
 	}
